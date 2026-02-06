@@ -1,0 +1,79 @@
+---
+import { siteConfig } from "../config";
+
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+---
+
+<header
+  id="header"
+  class="fixed top-0 left-0 right-0 z-50 hidden md:block transition-all duration-300"
+  style={`--accent-color: ${siteConfig.accentColor}`}
+>
+  <nav class="max-w-7xl mx-auto px-8 py-4">
+    <ul class="flex items-center gap-8 justify-center">
+      <li>
+        <a
+          href="#about"
+          class="text-zinc-400 hover:text-[var(--accent-color)] transition-colors font-medium"
+        >
+          Sobre Mí
+        </a>
+      </li>
+      {
+        hasProjects && (
+          <li>
+            <a
+              href="#projects"
+              class="text-zinc-400 hover:text-[var(--accent-color)] transition-colors font-medium"
+            >
+              Lo Que Hago
+            </a>
+          </li>
+        )
+      }
+      {
+        hasExperience && (
+          <li>
+            <a
+              href="#experience"
+              class="text-zinc-400 hover:text-[var(--accent-color)] transition-colors font-medium"
+            >
+              Experiencia
+            </a>
+          </li>
+        )
+      }
+      {
+        hasEducation && (
+          <li>
+            <a
+              href="#education"
+              class="text-zinc-400 hover:text-[var(--accent-color)] transition-colors font-medium"
+            >
+              Educación
+            </a>
+          </li>
+        )
+      }
+    </ul>
+  </nav>
+</header>
+
+<script>
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (window.scrollY > 100) {
+      header?.classList.add("bg-zinc-900/80", "backdrop-blur-sm", "border-b", "border-zinc-800");
+    } else {
+      header?.classList.remove("bg-zinc-900/80", "backdrop-blur-sm", "border-b", "border-zinc-800");
+    }
+  });
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
