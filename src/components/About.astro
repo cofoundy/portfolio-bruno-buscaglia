@@ -2,39 +2,44 @@
 import { siteConfig } from "../config";
 ---
 
-<section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24 bg-[#0a0a0a]">
-  <div>
+<section id="about" class="py-16 lg:py-24 px-6 lg:px-8" style={`background-color: ${siteConfig.colors.surface}`}>
+  <div class="max-w-6xl mx-auto">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
-      <div class="lg:col-span-4">
-        <h2
-          class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl font-bold text-white"
-        >
-          Sobre Mí
+      <div class="lg:col-span-4 reveal">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold" style="color: #f1f5f9">
+          Sobre Mi
         </h2>
-        <div
-          class="w-[75px] h-[5px] mt-2 rounded-full"
-          style={`background-color: ${siteConfig.accentColor}`}
-        >
-        </div>
+        <div class="mt-3 h-0.5 w-16 bar-shimmer rounded-full"></div>
       </div>
 
       <div class="lg:col-span-8 space-y-8">
-        <p class="text-lg sm:text-xl leading-relaxed text-zinc-400">
+        <p class="reveal text-base sm:text-lg leading-relaxed" style="color: #94a3b8">
           {siteConfig.aboutMe}
         </p>
 
-        <div class="pt-4">
+        <!-- Quote -->
+        {siteConfig.quote && (
+          <div class="reveal quote-float border-l-2 pl-6 py-2" style={`border-color: ${siteConfig.colors.accent}`}>
+            <p class="text-lg italic" style="color: #cbd5e1">
+              "{siteConfig.quote.text}"
+            </p>
+            <p class="mt-2 text-sm font-medium" style={`color: ${siteConfig.colors.accent}`}>
+              — {siteConfig.quote.author}
+            </p>
+          </div>
+        )}
+
+        <!-- Skills -->
+        <div class="reveal pt-2">
           <div class="flex flex-wrap gap-3">
-            {
-              siteConfig.skills.map((skill) => (
-                <span 
-                  class="px-3 sm:px-4 py-1.5 sm:py-2 bg-zinc-800/50 border border-zinc-700 text-zinc-300 rounded-full text-sm sm:text-base font-medium hover:border-[var(--accent-color)]/50 hover:text-[var(--accent-color)] transition-all duration-200"
-                  style={`--accent-color: ${siteConfig.accentColor}`}
-                >
-                  {skill}
-                </span>
-              ))
-            }
+            {siteConfig.skills.map((skill: string) => (
+              <span
+                class="skill-hover px-4 py-2 rounded-full text-sm font-medium border"
+                style={`background-color: ${siteConfig.colors.primaryLight}; border-color: ${siteConfig.colors.primaryLight}; color: #cbd5e1`}
+              >
+                {skill}
+              </span>
+            ))}
           </div>
         </div>
       </div>
