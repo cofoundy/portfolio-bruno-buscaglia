@@ -47,7 +47,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                     {exp.bullets.map((bullet: string) => (
                       <li class="flex items-start">
                         <span class="inline-block w-1.5 h-1.5 rounded-full mt-2 mr-3 flex-shrink-0" style={`background-color: ${siteConfig.colors.accent}`}></span>
-                        <span class="text-sm" style="color: #94a3b8">{bullet}</span>
+                        <span class="text-sm" style="color: #94a3b8" set:html={bullet} />
                       </li>
                     ))}
                   </ul>

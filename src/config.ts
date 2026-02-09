@@ -37,7 +37,7 @@ export const siteConfig = {
     phone: "+51 980 228 875",
   },
   aboutMe:
-    "Emprendedor con mas de 10 anos de experiencia en marketing, comunicacion estrategica y liderazgo comercial. He desarrollado equipos de ventas en 15 paises de Latinoamerica, combinando marketing digital, branding y social selling. Licenciado en Ciencias de la Comunicacion con Maestria en Comunicacion y Desarrollo Sustentable. Hoy asesoro a empresas y profesionales que quieren construir una marca que conecte y genere resultados.",
+    "Emprendedor con mas de <strong>10 anos de experiencia</strong> en marketing, comunicacion estrategica y <strong>liderazgo comercial</strong>. He desarrollado equipos de ventas en <strong>15 paises</strong> de Latinoamerica, combinando <strong>marketing digital</strong>, branding y social selling. <strong>Licenciado en Ciencias de la Comunicacion</strong> con <strong>Maestria en Comunicacion y Desarrollo Sustentable</strong>. Hoy asesoro a empresas y profesionales que quieren construir una marca que conecte y genere resultados.",
   skills: [
     "Branding",
     "Marketing Digital",
@@ -52,25 +52,25 @@ export const siteConfig = {
     {
       name: "Desarrollo de Marca Personal",
       description:
-        "Construyo tu identidad profesional para que destaques en tu industria. Desde tu propuesta de valor hasta tu presencia digital.",
+        "Construyo tu <strong>identidad profesional</strong> para que destaques en tu industria. Desde tu <strong>propuesta de valor</strong> hasta tu presencia digital.",
       skills: ["Branding", "Storytelling", "Estrategia"],
     },
     {
       name: "Marketing Digital",
       description:
-        "Diseno e implemento campanas de marketing digital que generan resultados medibles — desde awareness hasta conversion.",
+        "Diseno e implemento campanas de <strong>marketing digital</strong> que generan <strong>resultados medibles</strong> — desde awareness hasta conversion.",
       skills: ["Social Media", "Contenido", "Analitica"],
     },
     {
       name: "Social Selling",
       description:
-        "Emprendimiento digital con proposito. Te enseno a construir tu red de contactos y generar ventas a traves de relaciones.",
+        "Emprendimiento digital con proposito. Te enseno a construir tu <strong>red de contactos</strong> y generar ventas a traves de relaciones.",
       skills: ["Networking", "Ventas", "Liderazgo"],
     },
     {
       name: "Consultoria SEO & Web",
       description:
-        "Posiciona tu marca en Google. Estrategia de contenido, optimizacion web y presencia online para atraer clientes.",
+        "Posiciona tu marca en <strong>Google</strong>. <strong>Estrategia de contenido</strong>, optimizacion web y presencia online para atraer clientes.",
       skills: ["SEO", "Web Content", "E-Commerce"],
     },
   ],
@@ -80,10 +80,10 @@ export const siteConfig = {
       title: "Networker Diamond",
       dateRange: "2014 - 2024",
       bullets: [
-        "Desarrollo del area comercial en 15 paises de Latinoamerica",
-        "Speaker en eventos internacionales 'Dia de Exito'",
-        "Liderazgo de equipos multinacionales de ventas y capacitacion",
-        "Rango Diamond alcanzado — top del plan de compensacion",
+        "Desarrollo del area comercial en <strong>15 paises</strong> de Latinoamerica",
+        "<strong>Speaker</strong> en eventos internacionales <strong>'Dia de Exito'</strong>",
+        "Liderazgo de <strong>equipos multinacionales</strong> de ventas y capacitacion",
+        "Rango <strong>Diamond</strong> alcanzado — top del plan de compensacion",
       ],
     },
     {
@@ -91,9 +91,9 @@ export const siteConfig = {
       title: "Gerente de Marketing",
       dateRange: "Lima, Peru",
       bullets: [
-        "Estrategia de marketing digital y brand strategy",
-        "Gestion de e-commerce y contenido web",
-        "Activaciones de marca BTL y eventos corporativos",
+        "Estrategia de <strong>marketing digital</strong> y <strong>brand strategy</strong>",
+        "Gestion de <strong>e-commerce</strong> y contenido web",
+        "Activaciones de marca <strong>BTL</strong> y eventos corporativos",
       ],
     },
     {
@@ -101,9 +101,9 @@ export const siteConfig = {
       title: "Consultor de Comunicacion & Marketing",
       dateRange: "Actualidad",
       bullets: [
-        "Consultoria en marketing para empresas y emprendedores",
-        "Desarrollo de marca personal y posicionamiento digital",
-        "Capacitaciones en social selling y emprendimiento",
+        "Consultoria en marketing para <strong>empresas y emprendedores</strong>",
+        "Desarrollo de <strong>marca personal</strong> y <strong>posicionamiento digital</strong>",
+        "Capacitaciones en <strong>social selling</strong> y emprendimiento",
       ],
     },
   ],
@@ -113,7 +113,7 @@ export const siteConfig = {
       degree: "Maestria en Poblacion, Comunicacion y Desarrollo Sustentable",
       dateRange: "Completada",
       achievements: [
-        "Enfoque en comunicacion para el desarrollo social",
+        "Enfoque en <strong>comunicacion para el desarrollo social</strong>",
       ],
     },
     {
@@ -121,7 +121,7 @@ export const siteConfig = {
       degree: "Licenciado en Ciencias de la Comunicacion",
       dateRange: "Completada",
       achievements: [
-        "Base solida en comunicacion estrategica y medios",
+        "Base solida en <strong>comunicacion estrategica</strong> y medios",
       ],
     },
   ],
